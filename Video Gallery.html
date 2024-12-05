@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Ruthless Aggression Era</title>
+    <style>
+	body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Impact', sans-serif;
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+	
+	
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Impact', sans-serif;
+            background-color: #000;
+            color: #fff;
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                            url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            animation: slideIn 1s ease-out;
+        }
+
+        .era-title {
+            font-size: 5em;
+            font-weight: bold;
+            color: #ff0000;
+            text-transform: uppercase;
+            margin: 0;
+            text-shadow: 
+                3px 3px 0 #000,
+                -3px 3px 0 #000,
+                -3px -3px 0 #000,
+                3px -3px 0 #000;
+            letter-spacing: 4px;
+            animation: flicker 2s infinite;
+        }
+
+        .era-subtitle {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .era-description {
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-left: 5px solid #ff0000;
+            border-right: 5px solid #ff0000;
+        }
+		
+		.navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .nav-link {
+            background-color: rgba(255,0,0,0.8);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background-color: rgb(200,0,0);
+        }
+
+        .flames {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(0deg, 
+                rgba(255,0,0,0.6) 0%,
+                rgba(255,165,0,0.4) 50%,
+                transparent 100%);
+            z-index: -1;
+        }
+
+        .barbed-wire {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                #666 10px,
+                #666 20px
+            );
+            opacity: 0.5;
+        }
+
+        .era-quote {
+            font-style: italic;
+            font-size: 1.5em;
+            margin: 40px 0;
+            text-align: center;
+            color: #ff0000;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .accent-text {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .era-title {
+                font-size: 3em;
+            }
+            .era-subtitle {
+                font-size: 1.5em;
+            }
+            .era-description {
+                font-size: 1em;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="barbed-wire"></div>
+    <div class="container">
+        <div class="hero">
+            <h1 class="era-title">Ruthless Aggression</h1>
+            <h2 class="era-subtitle">2002 - 2008</h2>
+            
+            <div class="era-description">
+                Welcome to the era that redefined professional wrestling. Where legends were born, 
+                championships were fought for with <span class="accent-text">ruthless aggression</span>, 
+                and superstars pushed the boundaries of entertainment. This was more than just an era - 
+                it was a revolution in sports entertainment.
+            </div>
+
+            <div class="era-quote">
+                "If you want to make it in this business, you've got to show me some 
+                <span class="accent-text">RUTHLESS AGGRESSION!</span>"
+                - Vince McMahon
+            </div>
+        </div>
+    </div>
+	
+	 <div class="video-title-container">
+        <div class="video-title-inner">
+            <h1 class="video-title">Championship Match</h1>
+            <div class="separator"></div>
+            <p class="video-subtitle">John Cena vs. Randy Orton - Wrestlemania 24</p>
+        </div>
+    </div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/l58XSxWK8P4?si=UxFfvhSPo9V8U24o&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+	<div class="video-title-container">
+        <div class="video-title-inner">
+            <h1 class="video-title">Championship Match</h1>
+            <div class="separator"></div>
+            <p class="video-subtitle">Batista vs. Undertaker - Wrestlemania 23</p>
+        </div>
+    </div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWOXJokJe5k?si=JD9ZusPdxKwSulXH&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+	<div class="video-title-container">
+        <div class="video-title-inner">
+            <h1 class="video-title">The Rock Return Promo</h1>
+            <div class="separator"></div>
+            <p class="video-subtitle">Hollywood Rock on Smackdown 2003</p>
+        </div>
+    </div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7va1V-ufsaE?si=bmUHMcjv3JEgep4T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+	<div class="video-title-container">
+        <div class="video-title-inner">
+            <h1 class="video-title">Goldberg Best Spear Ever</h1>
+            <div class="separator"></div>
+            <p class="video-subtitle">Goldberg Spears Christian in half on RAW 2003</p>
+        </div>
+    </div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/_uzveYGvnN8?si=N9ptGrj1Oaf5M5G2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+	<div class="video-title-container">
+        <div class="video-title-inner">
+            <h1 class="video-title">First-ever Elimination Chamber Match</h1>
+            <div class="separator"></div>
+            <p class="video-subtitle">Six of WWEs top superstars battled it out in this DEADLY STRUCTURE - 2002</p>
+        </div>
+    </div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/BZ6_FNqmEf4?si=ZhGRMoUJqlQt9lLP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+	<div class="video-title-container">
+        <div class="video-title-inner">
+            <h1 class="video-title">Stone Cold Returns & faces The Rock</h1>
+            <div class="separator"></div>
+            <p class="video-subtitle">Rock & Austin battle it out in one of the most electrifying promos</p>
+        </div>
+    </div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/jc2MszRifUA?si=Lpyrgw6UxqA2pJ-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+	<div class="video-title-container">
+        <div class="video-title-inner">
+            <h1 class="video-title">Brock Lesnar's WWE Debut</h1>
+            <div class="separator"></div>
+            <p class="video-subtitle">Lesnar enters the ring and destroys a hand full of superstars single handedly</p>
+        </div>
+    </div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/WI423TEkt9o?si=34Em3x4Rr3-y6Ehx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	
+	
+	&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+	
+	<div class="navigation">
+            <a href="index.html" class="nav-link">Home</a>
+			<a href="Superstar Stats.html" class="nav-link">Superstar Stats</a>
+			<a href="WWE Table.html" class="nav-link">Champions Table</a>
+			<a href="Video Gallery.html" class="nav-link">Video Gallery</a>
+			<a href="WWE Extras.html" class="nav-link">Extras</a>
+        </div>
+		
+		
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		&nbsp; &nbsp; &nbsp; &nbsp;
+	
+	
+    <div class="flames"></div>
+</body>
+</html>

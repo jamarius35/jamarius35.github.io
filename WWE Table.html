@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Championship Reigns - Ruthless Aggression Era</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .table-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+
+        .table-title {
+            text-align: center;
+            color: #ff0000;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .championship-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .championship-table th {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .championship-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        .championship-table tbody tr {
+            transition: background-color 0.3s ease;
+        }
+
+        .championship-table tbody tr:hover {
+            background-color: rgba(255, 0, 0, 0.1);
+        }
+
+        .championship-table .long-reign {
+            color: #ffd700;
+        }
+
+        .championship-table .short-reign {
+            color: #c0c0c0;
+        }
+
+        .reign-length {
+            text-align: center;
+        }
+
+        .championship {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .event-name {
+            color: #add8e6;
+        }
+
+        @media (max-width: 768px) {
+            .table-container {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .championship-table {
+                font-size: 14px;
+            }
+
+            .championship-table th,
+            .championship-table td {
+                padding: 8px;
+            }
+        }
+		.navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .nav-link {
+            background-color: rgba(255,0,0,0.8);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: rgb(200,0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <h1 class="table-title">WWE Championship Reigns</h1>
+        <table class="championship-table">
+            <thead>
+                <tr>
+                    <th>Champion</th>
+                    <th>Won From</th>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Reign Length</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="long-reign">John Cena</td>
+                    <td>JBL</td>
+                    <td class="event-name">WrestleMania 21</td>
+                    <td>April 3, 2005</td>
+                    <td class="reign-length">280 days</td>
+                </tr>
+                <tr>
+                    <td>Edge</td>
+                    <td>John Cena</td>
+                    <td class="event-name">New Year's Revolution</td>
+                    <td>January 8, 2006</td>
+                    <td class="reign-length">21 days</td>
+                </tr>
+                <tr>
+                    <td class="long-reign">Triple H</td>
+                    <td>Big Show</td>
+                    <td class="event-name">Raw</td>
+                    <td>July 13, 2002</td>
+                    <td class="reign-length">280 days</td>
+                </tr>
+                <tr>
+                    <td class="long-reign">Batista</td>
+                    <td>Triple H</td>
+                    <td class="event-name">WrestleMania 21</td>
+                    <td>April 3, 2005</td>
+                    <td class="reign-length">282 days</td>
+                </tr>
+                <tr>
+                    <td>Eddie Guerrero</td>
+                    <td>Brock Lesnar</td>
+                    <td class="event-name">No Way Out</td>
+                    <td>February 15, 2004</td>
+                    <td class="reign-length">133 days</td>
+                </tr>
+                <tr>
+                    <td>Kurt Angle</td>
+                    <td>Big Show</td>
+                    <td class="event-name">Armageddon</td>
+                    <td>December 15, 2002</td>
+                    <td class="reign-length">105 days</td>
+                </tr>
+                <tr>
+                    <td class="long-reign">JBL</td>
+                    <td>Eddie Guerrero</td>
+                    <td class="event-name">The Great American Bash</td>
+                    <td>June 27, 2004</td>
+                    <td class="reign-length">280 days</td>
+                </tr>
+                <tr>
+                    <td>Randy Orton</td>
+                    <td>Chris Benoit</td>
+                    <td class="event-name">SummerSlam</td>
+                    <td>August 15, 2004</td>
+                    <td class="reign-length">28 days</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	
+	<div class="navigation">
+            <a href="index.html" class="nav-link">Home</a>
+			<a href="Superstar Stats.html" class="nav-link">Superstar Stats</a>
+			<a href="WWE Table.html" class="nav-link">Champions Table</a>
+			<a href="Video Gallery.html" class="nav-link">Video Gallery</a>
+			<a href="WWE Extras.html" class="nav-link">Extras</a>
+        </div>
+</body>
+</html>

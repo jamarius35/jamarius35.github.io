@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Ruthless Aggression Era - Superstar Stats</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: rgba(255,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .superstars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .superstar-card {
+            background-color: rgba(50,50,50,0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(255,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .superstar-card:hover {
+            transform: scale(1.05);
+        }
+        .superstar-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .superstar-info {
+            padding: 15px;
+        }
+        .superstar-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff0000;
+        }
+        .superstar-stats {
+            list-style-type: none;
+            padding: 0;
+        }
+        .superstar-stats li {
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 5px;
+        }
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .nav-link {
+            background-color: rgba(255,0,0,0.8);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .nav-link:hover {
+            background-color: rgba(255,0,0,1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WWE Ruthless Aggression Era Favorites</h1>
+        </div>
+        
+        <div class="superstars-grid">
+            <div class="superstar-card">
+                <img src="John Cena.jpg" alt="John Cena" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">John Cena</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 16</li>
+                        <li>Debut: 2002</li>
+                        <li>Signature Move: Attitude Adjustment</li>
+                        <li>Height: 6'1"</li>
+                        <li>Weight: 251 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Randy Orton.jpg" alt="Randy Orton" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Randy Orton</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 14</li>
+                        <li>Debut: 2002</li>
+                        <li>Signature Move: RKO</li>
+                        <li>Height: 6'4"</li>
+                        <li>Weight: 235 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Batista1.jpg" alt="Batista" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Batista</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 6</li>
+                        <li>Debut: 2002</li>
+                        <li>Signature Move: Batista Bomb</li>
+                        <li>Height: 6'6"</li>
+                        <li>Weight: 290 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Brock Lesnar1.jpg" alt="Brock Lesnar" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Brock Lesnar</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 10</li>
+                        <li>Debut: 2002</li>
+                        <li>Signature Move: F5</li>
+                        <li>Height: 6'3"</li>
+                        <li>Weight: 295 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Goldberg1.jpg" alt="Goldberg" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Goldberg</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 5</li>
+                        <li>Debut: 2003</li>
+                        <li>Signature Move: Jackhammer & Spear</li>
+                        <li>Height: 6'4"</li>
+                        <li>Weight: 285 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Triple H.jpg" alt="Triple H" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Triple H</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 14</li>
+                        <li>Debut: 1995</li>
+                        <li>Signature Move: Pedigree</li>
+                        <li>Height: 6'4"</li>
+                        <li>Weight: 255 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Undertaker.jpg" alt="Undertaker" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Undertaker</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 7</li>
+                        <li>Debut: 1990</li>
+                        <li>Signature Move: Tombstone Piledriver</li>
+                        <li>Height: 6'10"</li>
+                        <li>Weight: 299 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Chris Jericho.jpg" alt="Chris Jericho" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Chris Jericho</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 9</li>
+                        <li>Debut: 1999</li>
+                        <li>Signature Move: Walls of Jericho</li>
+                        <li>Height: 5'10"</li>
+                        <li>Weight: 226 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Kurt Angle.jpg" alt="Kurt Angle" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Kurt Angle</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 6</li>
+                        <li>Debut: 1999</li>
+                        <li>Signature Move: Ankle Lock</li>
+                        <li>Height: 5'10"</li>
+                        <li>Weight: 225 lbs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="superstar-card">
+                <img src="Shawn Michaels.jpg" alt="Shawn Michaels" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Shawn Michaels</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 4</li>
+                        <li>Debut: 1988</li>
+                        <li>Signature Move: Sweet Chin Music</li>
+                        <li>Height: 6'1"</li>
+                        <li>Weight: 225 lbs</li>
+                    </ul>
+                </div>
+            </div>
+			
+			<div class="superstar-card">
+                <img src="The Rock.jpg" alt="The Rock" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">The Rock</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 8</li>
+                        <li>Debut: 1996</li>
+                        <li>Signature Move: Rock Bottom & People's Elbow</li>
+                        <li>Height: 6'5"</li>
+                        <li>Weight: 260 lbs</li>
+                    </ul>
+                </div>
+            </div>
+			
+			<div class="superstar-card">
+                <img src="Stone Cold.jpg" alt="Stone Cold Steve Austin" class="superstar-image">
+                <div class="superstar-info">
+                    <h2 class="superstar-name">Stone Cold Steve Austin</h2>
+                    <ul class="superstar-stats">
+                        <li>Championships: 6</li>
+                        <li>Debut: 1995</li>
+                        <li>Signature Move: Stone Cold Stunner</li>
+                        <li>Height: 6'2"</li>
+                        <li>Weight: 252 lbs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Superstar Stats.html" class="nav-link">Superstar Stats</a>
+			<a href="WWE Table.html" class="nav-link">Champions Table</a>
+            <a href="Video Gallery.html" class="nav-link">Video Gallery</a>
+			<a href="WWE Extras.html" class="nav-link">Extras</a>
+        </div>
+    </div>
+</body>
+</html>
